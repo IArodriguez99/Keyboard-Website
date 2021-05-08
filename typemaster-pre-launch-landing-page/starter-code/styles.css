@@ -1,5 +1,7 @@
 body{
     font-family: 'Barlow', sans-serif;
+    width: 1110px;
+    margin: auto;
 }
 
 h1{
@@ -26,6 +28,7 @@ h3{
 p{
     color: #7B8BAD;
     font-weight:500;
+    line-height: 26px;
 }
 
 .btn-2{
@@ -52,24 +55,92 @@ p{
     line-height: 26px;
 }
 
-.pre-order p{
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
 .header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 90%;
 }
 
 .logo{
-    padding-left: 165px;
     padding-top: 64px;
 }
 
 .order-btn{
     margin-left: auto;
     padding-top: 64px;
+}
+
+.keyboard-release{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    padding-top: 88px;
+}
+
+.keyboard-col{
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+}
+
+.pre-order{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 36px;
+}
+
+.pre-order p{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 36px;
+}
+
+.release-img{
+    margin-left: 136px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.keyboard-display{
+    display: flex;
+    flex-direction: row;
+    margin-top: 36px;
+}
+
+.text-display{
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 96px;
+    padding-left: 104px;
+}
+
+.keyboard-phone{
+    border-radius: 8px;
+}
+
+.keyboard-glass{
+    border-radius: 8px;
+    margin-left: 36px;
+}
+
+.specs{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 240px;
+}
+
+.col{
+    width: 250px;
+}
+
+.col h3{
+    width: 80%;
+}
+
+.footer {
+   
 }
