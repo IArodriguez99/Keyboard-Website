@@ -31,6 +31,23 @@ p{
     line-height: 26px;
 }
 
+.btn-1{
+    padding: 16px 26px;
+    color:#162542;
+    background-color: #E8EFF2;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.btn-1:hover{
+    background-color: #162542;
+    color: #ffffff;
+    cursor: pointer;
+}
 .btn-2{
     padding: 16px 26px;
     color:#ffffff;
@@ -43,16 +60,9 @@ p{
     line-height: 26px;
 }
 
-.btn-1{
-    padding: 16px 26px;
-    color:#162542;
-    background-color: #E8EFF2;
-    border-radius: 8px;
-    border: none;
-    font-family: 'Barlow', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 26px;
+.btn-2:hover{
+    background-color: #FF9B62;
+    cursor: pointer;
 }
 
 .header{
@@ -142,5 +152,6 @@ p{
 }
 
 .footer {
-   
+    text-align: center;
+    margin-top: 224px;
 }
