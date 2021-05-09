@@ -1,25 +1,25 @@
 body{
     font-family: 'Barlow', sans-serif;
-    width: 1110px;
+    width: 70rem;
     margin: auto;
 }
 
 h1{
-    font-size: 56px;
+    font-size: 3.5rem;
     color:#162542;
     font-weight: 900;
     text-transform: uppercase;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 2rem;
     color:#162542;
     font-weight: 900;
     text-transform: uppercase;
 }
 
 h3{
-    font-size: 24px;
+    font-size: 1.5rem;
     color:#162542;
     font-weight: 900;
     text-transform: uppercase;
@@ -32,10 +32,10 @@ p{
 }
 
 .btn-1{
-    padding: 16px 26px;
+    padding: 1em 1.6em;
     color:#162542;
     background-color: #E8EFF2;
-    border-radius: 8px;
+    border-radius: 0.5em;
     border: none;
     font-family: 'Barlow', sans-serif;
     text-transform: uppercase;
@@ -49,10 +49,10 @@ p{
     cursor: pointer;
 }
 .btn-2{
-    padding: 16px 26px;
+    padding: 1em 1.6em;
     color:#ffffff;
     background-color: #F16718;
-    border-radius: 8px;
+    border-radius: 0.5em;
     border: none;
     font-family: 'Barlow', sans-serif;
     text-transform: uppercase;
@@ -72,67 +72,67 @@ p{
 }
 
 .logo{
-    padding-top: 64px;
+    padding-top: 4rem;
 }
 
 .order-btn{
     margin-left: auto;
-    padding-top: 64px;
+    padding-top: 4rem;
 }
 
 .keyboard-release{
     display: flex;
     flex-direction: row;
     align-items: top;
-    padding-top: 88px;
+    padding-top: 5.5rem;
 }
 
 .keyboard-col{
     display: flex;
     flex-direction: column;
-    width: 445px;
+    width: 28rem;
 }
 
 .pre-order{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 36px;
+    padding-top: 2.25rem;
 }
 
 .pre-order p{
     text-transform: uppercase;
     font-weight: 700;
-    padding-left: 36px;
+    padding-left: 2.25rem;
 }
 
 .release-img{
-    margin-left: 136px;
-    border-radius: 16px;
+    margin-left: 8.5rem;
+    border-radius: 1em;
     overflow: hidden;
 }
 
 .keyboard-display{
     display: flex;
     flex-direction: row;
-    margin-top: 36px;
+    margin-top: 2.25rem;
 }
 
 .text-display{
     display: flex;
     flex-direction: column;
     
-    padding-top: 96px;
-    padding-left: 104px;
+    padding-top: 6rem;
+    padding-left: 6.5rem;
 }
 
 .keyboard-phone{
-    border-radius: 8px;
+    border-radius: 0.5em;
 }
 
 .keyboard-glass{
-    border-radius: 8px;
-    margin-left: 36px;
+    border-radius: 0.5em;
+    margin-left: 2.25rem;
 }
 
 .specs{
@@ -140,11 +140,11 @@ p{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
-    margin-top: 240px;
+    margin-top: 15rem;
 }
 
 .col{
-    width: 250px;
+    width: 16rem;
 }
 
 .col h3{
@@ -153,5 +153,20 @@ p{
 
 .footer {
     text-align: center;
-    margin-top: 224px;
+    margin-top: 14rem;
+}
+
+@media (max-width: 40em) {
+    .keyboard-release{
+        flex-direction: column;
+    }
+
+    .keyboard-display{
+        flex-direction: column;
+        text-align: center;
+        width: 30%;
+    }
+    .specs{
+        flex-direction: column;
+    }
 }
