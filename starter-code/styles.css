@@ -157,16 +157,13 @@ p{
 }
 
 @media (max-width: 40em) {
-    .keyboard-release{
-        flex-direction: column;
-    }
+   .container{
+       display: flex;
+       flex-direction: column;
+   }
 
-    .keyboard-display{
-        flex-direction: column;
-        text-align: center;
-        width: 30%;
-    }
-    .specs{
-        flex-direction: column;
-    }
+   .specs{
+       display: flex;
+       flex-direction: column;
+   }
 }
