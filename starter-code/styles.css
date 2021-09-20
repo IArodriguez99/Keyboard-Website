@@ -27,7 +27,7 @@ h3{
 }
 
 p{
-    font-size: clamp(0.5rem, 10vh, 1.1rem);
+    font-size: clamp(0.5em, 10vh, 1.1em);
     color: #7B8BAD;
     font-weight:500;
     line-height: 32px;
@@ -141,6 +141,9 @@ p{
     margin-top: 15rem;
 }
 
+.col{
+    max-width: 80%;
+}
 .col h3{
     max-width: 80%;
 }
@@ -150,41 +153,42 @@ p{
     margin-top: 10rem;
 }
 
+
 @media (max-width: 40em) {
-   .container{
-       display: block;
-   }
+.body{
+    display: block;
+    
+}
 
-   .keyboard-release{
-       display: flex;
-       flex-direction: column;
-   }
+.keyboard-release{
+    display: flex;
+    flex-direction: column;
+}
 
-   .release-img{
-       margin-left: 0rem;
-       max-width: 100%;
-   }
-
-   .keyboard-glass{
-    max-width: 100%;
-   }
-
-   .keyboard-phone{
-    max-width: 100%;
-   }
-
-   .specs{
-      display: grid;
-      grid-template-columns: 50%;
-      grid-gap: 3rem;
-      justify-content: center;
-      text-align: center;
-   }
-
-   .col h3{
+.release-img{
+    margin-left: 0rem;
     max-width: 100%;
 }
 
+.keyboard-glass{
+    max-width: 100%;
+}
 
-      
+.keyboard-phone{
+    max-width: 100%;
+}
+
+.specs{
+    display: grid;
+    grid-template-columns: 50%;
+    grid-gap: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+.col h3{
+    max-width: 100%;
+}
+.col {
+    max-width: 14rem;
+}
 }
