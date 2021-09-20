@@ -157,7 +157,7 @@ p{
 @media (max-width: 40em) {
 .body{
     display: block;
-    
+    overflow-x: hidden;
 }
 
 .keyboard-release{
