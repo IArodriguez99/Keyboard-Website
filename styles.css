@@ -1,7 +1,7 @@
 body{
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
-    max-width: 80%;
+    width: 80%;
     margin: auto;
 }
 
@@ -155,9 +155,10 @@ p{
 
 
 @media (max-width: 40em) {
-.body{
-    display: block;
+body{
     overflow-x: hidden;
+    width: 100%;
+    padding: 1rem;
 }
 
 .keyboard-release{
@@ -166,21 +167,14 @@ p{
 }
 
 .release-img{
-    margin-left: 0rem;
     max-width: 100%;
+    margin-top: 5rem;
 }
 
-.keyboard-glass{
-    max-width: 100%;
-}
-
-.keyboard-phone{
-    max-width: 100%;
-}
 
 .specs{
     display: grid;
-    grid-template-columns: 50%;
+    grid-template-columns: 100%;
     grid-gap: 3rem;
     justify-content: center;
     text-align: center;
@@ -188,7 +182,5 @@ p{
 .col h3{
     max-width: 100%;
 }
-.col {
-    max-width: 14rem;
-}
+ 
 }
