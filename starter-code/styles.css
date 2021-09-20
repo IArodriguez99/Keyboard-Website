@@ -1,11 +1,12 @@
 body{
+    box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
-    width: 70rem;
+    max-width: 80%;
     margin: auto;
 }
 
 h1{
-    font-size: 3.5rem;
+    font-size: clamp(3em, 10vw, 5em);
     color:#162542;
     font-weight: 900;
     text-transform: uppercase;
@@ -26,9 +27,10 @@ h3{
 }
 
 p{
+    font-size: clamp(0.5rem, 10vh, 1.1rem);
     color: #7B8BAD;
     font-weight:500;
-    line-height: 26px;
+    line-height: 32px;
 }
 
 .btn-1{
@@ -72,25 +74,26 @@ p{
 }
 
 .logo{
-    padding-top: 4rem;
+    padding-top: 4em;
 }
 
 .order-btn{
     margin-left: auto;
-    padding-top: 4rem;
+    padding-top: 4em;
 }
 
 .keyboard-release{
     display: flex;
     flex-direction: row;
-    align-items: top;
-    padding-top: 5.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
 }
 
 .keyboard-col{
     display: flex;
     flex-direction: column;
-    width: 28rem;
+    max-width: 27em;
 }
 
 .pre-order{
@@ -107,63 +110,81 @@ p{
 }
 
 .release-img{
-    margin-left: 8.5rem;
     border-radius: 1em;
-    overflow: hidden;
+    max-width: 50%;
 }
 
 .keyboard-display{
-    display: flex;
-    flex-direction: row;
-    margin-top: 2.25rem;
-}
-
-.text-display{
-    display: flex;
-    flex-direction: column;
-    
-    padding-top: 6rem;
-    padding-left: 6.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    margin-top: 4rem;   
 }
 
 .keyboard-phone{
     border-radius: 0.5em;
+    max-width: 70%;
 }
 
 .keyboard-glass{
     border-radius: 0.5em;
-    margin-left: 2.25rem;
+    max-width: 80%;
+}
+.text-display{
+    max-width: 18em;
+
 }
 
 .specs{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 15rem;
 }
 
-.col{
-    width: 16rem;
-}
-
 .col h3{
-    width: 80%;
+    max-width: 80%;
 }
 
 .footer {
     text-align: center;
-    margin-top: 14rem;
+    margin-top: 10rem;
 }
 
 @media (max-width: 40em) {
    .container{
+       display: block;
+   }
+
+   .keyboard-release{
        display: flex;
        flex-direction: column;
    }
 
-   .specs{
-       display: flex;
-       flex-direction: column;
+   .release-img{
+       margin-left: 0rem;
+       max-width: 100%;
    }
+
+   .keyboard-glass{
+    max-width: 100%;
+   }
+
+   .keyboard-phone{
+    max-width: 100%;
+   }
+
+   .specs{
+      display: grid;
+      grid-template-columns: 50%;
+      grid-gap: 3rem;
+      justify-content: center;
+      text-align: center;
+   }
+
+   .col h3{
+    max-width: 100%;
+}
+
+
+      
 }
