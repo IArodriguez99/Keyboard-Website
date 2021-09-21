@@ -73,13 +73,9 @@ p{
     align-items: center;
 }
 
-.logo{
-    padding-top: 4em;
-}
-
 .order-btn{
     margin-left: auto;
-    padding-top: 4em;
+    padding-top: 1.5em;
 }
 
 .keyboard-release{
@@ -116,8 +112,8 @@ p{
 
 .keyboard-display{
     display: grid;
-    grid-auto-flow: column;
-    align-items: center;
+    grid-auto-flow: row;
+    width: (100%);
     margin-top: 4rem;   
 }
 
@@ -128,10 +124,12 @@ p{
 
 .keyboard-glass{
     border-radius: 0.5em;
-    max-width: 80%;
+    max-width: 85%;
+    justify-content: flex-start;
 }
 .text-display{
     max-width: 18em;
+    align-self: center;
 
 }
 
@@ -173,6 +171,10 @@ body{
     margin-top: 5rem;
 }
 
+.keyboard-display{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 .specs{
     display: grid;
